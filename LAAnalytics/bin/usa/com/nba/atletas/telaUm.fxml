@@ -1,7 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-	
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="usa.com.nba.atletas.operacoesController">
-	<!-- TODO Add Nodes -->
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="usa.com.nba.atletas.operacoesController">
+   <children>
+      <SplitPane dividerPositions="0.11654135338345864" layoutX="273.0" layoutY="92.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxHeight="20.0" minHeight="20.0" minWidth="0.0" prefHeight="20.0" prefWidth="798.0">
+               <children>
+                  <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="SOBRE">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="AUTOR" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextField fx:id="txf_nome" layoutX="304.0" layoutY="226.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="580.0" AnchorPane.rightAnchor="294.0">
+                     <padding>
+                        <Insets bottom="10.0" left="3.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="txf_sobrenome" layoutX="304.0" layoutY="256.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="520.0" AnchorPane.rightAnchor="294.0">
+                     <padding>
+                        <Insets bottom="10.0" left="3.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="txf_idade" layoutX="304.0" layoutY="286.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="460.0" AnchorPane.rightAnchor="294.0">
+                     <padding>
+                        <Insets bottom="10.0" left="3.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="txf_posicao" layoutX="304.0" layoutY="316.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="400.0" AnchorPane.rightAnchor="294.0">
+                     <padding>
+                        <Insets bottom="10.0" left="3.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="txf_equipe" layoutX="304.0" layoutY="346.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="340.0" AnchorPane.rightAnchor="294.0">
+                     <padding>
+                        <Insets bottom="10.0" left="3.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <Text layoutX="204.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" AnchorPane.leftAnchor="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="197.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sobrenome" AnchorPane.leftAnchor="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="205.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idade" AnchorPane.leftAnchor="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="203.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posição" AnchorPane.leftAnchor="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="203.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipe" AnchorPane.leftAnchor="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_cadastrar" layoutX="331.0" layoutY="461.0" maxHeight="60.0" maxWidth="160.0" minHeight="50.0" minWidth="160.0" mnemonicParsing="false" onAction="#cadastrarJogador" prefHeight="60.0" prefWidth="160.0" text="CADASTRAR" AnchorPane.leftAnchor="320.0">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
 </AnchorPane>
